@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-}     
+}
 
 body {
-    overflow: hidden;
-} 
+    /* overflow: hidden; */
+    background-color: rgba(0, 0, 0, 0.445);
+}
 
+/* Top Navigation section start */
 .top-header {
     background-color: gray;
     height: 9vh;
@@ -29,39 +31,41 @@ body {
     /* border: 1px solid #07e612; */
 }
 
-  
-.top-header-container > ul {
+
+.top-header-container>ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.top-header-container > ul > li {
+.top-header-container>ul>li {
     list-style: none;
 }
 
-.top-header-container > .notifications {
+.top-header-container>.notifications {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.top-header-container > .notifications > img:not(.arrow) {
+.top-header-container>.notifications>img:not(.arrow) {
     height: 20px;
     width: auto;
     margin: 5px;
 }
 
-.top-header-container > .notifications > .arrow {
+.top-header-container>.notifications>.arrow {
     height: 7px;
     width: auto;
     margin-left: 6px;
 }
 
+/* Top Navigation section end */
+
+/* Top Recomended section start  */
 .bottom {
-    background-color: black;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
     font-size: 0.5rem;
 }
@@ -85,52 +89,47 @@ body {
     width: 7%;
 }
 
+/* Top Recomended section end  */
+
+
+.img-card > img {
+    border-radius: 3%;
+}
+
 .card-grid {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* border: 10px solid red; */
-    height: 40%;
-    width: 76%;
-    margin: 1.5% auto 0 auto;
-    /* background-color: #fff; */
+    flex-direction: column;
+    width: 80%;
+    /* border: 2px solid red ; */
+    /* background-color: rgb(255, 255, 255); */
+    margin: 3% 3% 1% 14%;
 }
 
-.cards > img {
-    height: 100%;
-    width: auto;
-    border-radius: 5px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 9%;
 }
 
-.card-grid > .add-items {
-    /* height: 100%; */
-    width: 16%;
-    background-color: #797171;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-left: -14%;
+
+/* .card-grid>.cards>.add-btn {
+    background-color: #ffffffd5;
+    border-radius: 50%;
+} */
+
+/* .img-card {
+    height: auto;
+    width: 82%;
+    } */
+    
+    .img-card:hover:not(.add-btn) {
+        box-shadow: 0 0 28px rgb(0, 183, 255);
+        transform: scale(1.1);
+        transition: box-shadow 0.1s ease-in-out;
+        border-radius: 7px;
+    /* border: 7px solid green;  */
+    /* overflow: hiodden; */
 }
 
-.card-grid > .cards:hover {
-    box-shadow: 0 0 30px #3491fc;
-}
-
-.add-items__round-button {
-    height: 70px;
-    width: 70px;
-    border-radius: 50px;
-    background-color: gray ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.book-details {
-    background-color: gray;
-    border: 1px solid #fa0404;
-    margin: 2.7% 10% 0 10%;
-    height: 29%;
-    border-radius: 5px;
-}
+/* Middle Body section end */

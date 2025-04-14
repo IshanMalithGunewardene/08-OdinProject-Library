@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 15%);
+  /* grid-template-rows: repeat(2, 10%); */
+  grid-row-gap: 5%;
+  margin: 26px;
+  /* background-color: rgba(255, 0, 0, 0.192); */
+}
+
+.cards {
+    height: auto;
+    width: 82%;
+    transition: box-shadow 0.1s ease-in-out;
+  }
+
+  .cards:hover {
+    box-shadow: 0 0 20px rgb(0, 183, 255);
+    transform: scale(1.1);
+    /* border: 7px solid green;  */
+    /* overflow: hiodden; */
+} 
+
+.card-grid > .add-items {
+  height: auto;
+  width: 82%;
+  background-color: #bbb5b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+ }
+
+.add-items__round-button {
+  background-color: rgb(128, 128, 128);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.book-details {
+    height: 29vh;
+    width: 55%;
+    background-color: rgb(187, 184, 184);
+    border-radius: 7px;
+    
+    margin: 38px 26px 26px 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.book-details>.card-botom>img {
+  width: 220px;
+  height: 150px;
+  margin: 0% 0% 0%  14%;
+}
+
+.book-details > .text {
+  margin: 0% 0% 0%  4%;
+  color: white;
+  /* border: 1px solid #000; */
+}
+
+.book-details > .text > * {
+  padding:5px;
+}
+
+.add-new-item {
+  height: 68%;
+  width: 45%;
+  background-color: rgba(128, 128, 128, 0.788);
+  border-radius: 7px;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: -1;
+  margin: 3px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 4% 5% 5% 5%;
+  display: none;
+ 
+} 
+
+.add-new-item > .add-book-form > *:not(.submit){
+  padding: 5px 0 0 0;
+}
+
+.submit {
+  margin: 10px auto 0 auto;
+  width: 40%;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* .add-new-item > #add-book-form {
+
+} */
