@@ -31,7 +31,7 @@ book2.detailsCalled();
 
 const addCard = document.createElement('div');
 addCard.className = 'img-card';
-addCard.innerHTML = `<div class="img-card add-btn"><img src="/assets/icouns/cross.png" alt="" height="70px" width="70px"><div>`;
+addCard.innerHTML = `<div class="img-card add-btn"><img src="./assets/icouns/cross.png" alt="" height="70px" width="70px"><div>`;
 Object.assign(addCard.style, {
     backgroundColor: '#ffffff3d',
     borderRadius: '3%',
